@@ -1,0 +1,51 @@
+.about-me-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .profile-section {
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #813e60;
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .bio-section {
+    background-color: #813e60;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #74546a;
+    flex: 1;
+  }
+  
+  .about {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    color: #FCD9D9;
+  }
+  
+  .bio {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #FCD9D9;
+    padding: 25px;
+  }
