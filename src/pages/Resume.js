@@ -1,13 +1,14 @@
 // Resume.js
 import React from 'react';
 import '../styles/Resume.css';
+import resume from '../Resume.pdf';
 
 const Resume = () => {
   return (
     <div className="resume-container">
       <h2>Resume</h2>
       <p>Download my resume:</p>
-      <a class='resume' href="%PUBLIC_URL%/path/to/your/resume.pdf" download="MalkaGreenberg_Resume.pdf">
+      <a class='resume' href= {resume}  download="MalkaGreenberg_Resume.pdf">
         Download Resume
       </a>
 

@@ -12,6 +12,7 @@ const Contact = () => {
   const initialErrors = {
     name: '',
     email: '',
+    message:'',
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -33,7 +34,7 @@ const Contact = () => {
   };
 
   const validateField = (name, value) => {
-    // Basic validation, you can enhance this based on your needs
+    // Basic validation
     if (name === 'name') {
       setErrors((prevErrors) => ({ ...prevErrors, name: value ? '' : 'Name is a required field' }));
     } else if (name === 'email') {
@@ -42,17 +43,22 @@ const Contact = () => {
         ...prevErrors,
         email: emailRegex.test(value) ? '' : 'Invalid email address',
       }));
+    } else if (name === 'message'){
+      setErrors((prevErrors) => ({ ...prevErrors, message: value ? '' : 'message is a required field' }));
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add further logic for form submission here
-    // For now, let's just log the form data
     console.log('Form submitted:', formData);
 
-    setFormData(initialFormData);
-    setErrors(initialErrors);
+    if (Object.values(errors).every((error) => !error)) {
+      console.log('Form submitted:', formData);
+      setFormData(initialFormData);
+      setErrors(initialErrors);
+    } else {
+      console.log('Form has validation errors. Please correct them.');
+    }
   };
 
   return (
@@ -92,7 +98,9 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
+            onBlur={handleBlur}
           />
+          <div className="error-message">{errors.message}</div>
         </div>
 
         <button type="submit">Submit</button>
