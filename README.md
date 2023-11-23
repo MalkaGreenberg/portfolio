@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Portfolio Screenshot](Screenshot.png)
 
-## Available Scripts
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contact](#contact)
+- [License](#license)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This React Portfolio is a single-page application showcasing my web development projects. It is built using React and includes sections such as About Me, Portfolio, Contact, and Resume. The goal is to provide potential employers and collaborators with a comprehensive overview of my skills and projects.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Mobile-first design
+- Navigation using `react-router-dom` for seamless page transitions
+- Responsive project grid in the Portfolio section
+- Contact form with field validation
+- Downloadable resume and proficiency list in the Resume section
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project locally, follow these steps:
 
-### `npm run build`
+1. Clone the repository: `git clone https://github.com/your-username/react-portfolio.git`
+2. Navigate to the project directory: `cd portfolio`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- React Router
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+The project follows a modular structure:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **src/components**: Contains reusable React components (Header, Navigation, Project, Footer).
+- **src/pages**: Each section of the portfolio (About, Portfolio, Contact, Resume) is represented by a page component.
+- **src/assets**: Images and other static assets.
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Customize the portfolio by replacing placeholder content in components and updating project information in the Portfolio section.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application is deployed using Netlify.
+View Deployed application [HERE](https://main--malka-g-portfolio.netlify.app/).
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For inquiries or feedback, feel free to reach out: 732-942-4561
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
